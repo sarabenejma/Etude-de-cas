@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout d'Offre</title>
+    <style>
+        .error-message { color: red; font-size: 0.9em; }
+        .success-message { color: green; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <h2>Ajouter une Offre de Voyage</h2>
+
+    <form id="offerForm">
+        <label for="titre">Titre :</label>
+        <input type="text" id="titre" name="titre">
+        <div id="titreError" class="error-message"></div><br>
+
+        <label for="destination">Destination :</label>
+        <input type="text" id="destination" name="destination">
+        <div id="destinationError" class="error-message"></div><br>
+
+        <label for="dateDepart">Date de départ :</label>
+        <input type="date" id="dateDepart" name="dateDepart">
+        <div id="dateDepartError" class="error-message"></div><br>
+
+        <label for="dateRetour">Date de retour :</label>
+        <input type="date" id="dateRetour" name="dateRetour">
+        <div id="dateRetourError" class="error-message"></div><br>
+
+        <label for="prix">Prix :</label>
+        <input type="number" id="prix" name="prix">
+        <div id="prixError" class="error-message"></div><br>
+
+        <button type="submit">Add Offer</button>
+    </form>
+
+    <script src="addOffer(P3).js"></script>
+
+</body>
+</html>
